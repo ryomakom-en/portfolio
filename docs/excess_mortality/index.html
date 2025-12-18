@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COVID Toll: Excess Deaths Japan Didn’t Count</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
+  
+  <meta name="description"
+    content="Population-adjusted excess mortality analysis reveals that rural prefectures, not major metros, were hit hardest during COVID-19 in Japan.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Excess Deaths Japan Didn’t Count">
+  <meta property="og:description"
+    content="Population-adjusted excess mortality analysis reveals that rural prefectures, not major metros, were hit hardest during COVID-19 in Japan.">
+  <meta property="og:image"
+    content="https://ryomakom-en.github.io/portfolio/excess_mortality/excess_mortality_jpmap.jpg">
+  <meta property="og:url"
+    content="https://ryomakom-en.github.io/portfolio/excess_mortality/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Excess Deaths Japan Didn’t Count">
+  <meta name="twitter:description"
+    content="Population-adjusted excess mortality analysis reveals that rural prefectures, not major metros, were hit hardest during COVID-19 in Japan.">
+  <meta name="twitter:image"
+    content="https://ryomakom-en.github.io/portfolio/excess_mortality/excess_mortality_jpmap.jpg">
+
+</head>
+<body>
+
+<a href="https://ryomakom-en.github.io/about_me/" class="back-home" aria-label="Back to home">
+  <span class="back-home__icon">🏠</span>
+  <span class="back-home__label">Home</span>
+</a>
+
+<div class="page-shell">
+<article class="case-card">
+
+<h1>COVID Toll: Excess Deaths Japan Didn’t Count</h1>
+<p>
+  Japan saw 135,000 excess deaths from 2020 to 2022—more than twice the 57,000 official COVID
+  deaths—suggesting indirect losses linked to hospital strain and vulnerability among older people,
+  based on government mortality data.
+</p>
+
+<hr>
+
+<!-- 2. What We Found -->
+<section class="section fade-in">
+  <h2 class="section-heading">What We Found</h2>
+  <ul>
+    <li>Excess deaths were about 135,000 over three years—more than double the 57,000 officially
+      reported COVID deaths—showing a large, previously unknown toll from indirect and unrecorded cases.</li>
+    <li>Adjusted for population, the highest death rates were in rural prefectures such as Kochi
+      (on Shikoku island), Miyazaki (in southern Kyushu), and Toyama (on the Japan Sea coast), rather
+      than in big cities like Tokyo or Osaka.</li>
+    <li>In 2020, overall deaths initially fell below normal—helped by masks, distancing, and a
+      collapse in influenza—but then rose sharply in 2021–22 as pressure on health systems built up
+      and older people were hit hardest.</li>
+  </ul>
+</section>
+
+<hr>
+
+<!-- 3. Why It Matters -->
+<section class="section fade-in">
+  <h2 class="section-heading">Why It Matters</h2>
+  <p>
+    Looking only at confirmed COVID deaths made the pandemic seem milder than it really was.
+    Many deaths likely came from delayed care, crowded hospitals, and other knock-on effects among older
+    and vulnerable people.
+  </p>
+  <p>
+    The analysis shows how <strong>aging rural regions</strong>—in Japan and elsewhere—can be hit
+    hardest even when infection waves do not always appear dramatic in headline numbers.
+  </p>
+</section>
+
+<hr>
+
+<!-- 4. Visual Highlight (Main) -->
+  <section class="section fade-in">
+    <h2 class="section-heading">Visual Highlight</h2>
+    <p>
+      <em><strong>
+        Once adjusted for population, excess mortality was highest in rural
+        prefectures—not major metropolitan areas.
+      </strong></em>
+    </p>
+
+    <figure class="full-bleed">
+      <img src="excess_mortality_jpmap.jpg"
+        alt="Map of Japan showing population-adjusted excess deaths by
+        prefecture from 2020 to 2022"
+        style="max-width:100%; border-radius:8px;">
+      <figcaption style="font-size:0.9em; color:#666; margin-top:6px;">
+        Population-adjusted excess deaths per capita, 2020–2022.
+      </figcaption>
+    </figure>
+  </section>
+  
+<hr>
+
+<!-- 4b. Secondary Visual -->
+<section class="section fade-in">
+  <h3 style="margin-top:0.4rem;">Weekly Progression (Heatmap)</h3>
+  <p>
+    A week-by-week heatmap traces when and where deaths surged, revealing how the pattern shifted across
+    prefectures over time.
+  </p>
+
+  <iframe src="exdeath_heatmap.html" width="100%" height="900" style="border:none;" loading="lazy">
+    <img src="exdeath_heatmap.png" alt="Excess deaths weekly heatmap" style="max-width:100%;">
+  </iframe>
+
+</section>
+
+<hr>
+<!-- 5. How we did it -->
+<section class="section fade-in">
+  <h2 class="section-heading">How We Did It</h2>
+  <ul>
+    <li>Used estimates from a Ministry-affiliated research team of how many people would normally die
+      each week, based on past years of mortality data.</li>
+    <li>Calculated “excess deaths” by comparing observed deaths with this expected number, using the
+      middle of the estimate range to avoid overstating the impact.</li>
+    <li>Mapped the results for all prefectures to compare death rates per person and see how patterns
+      changed over time.</li>
+    <li>Discussed the findings with the mortality research team to confirm the patterns were medically
+      plausible and communicated with proper caution.</li>
+  </ul>
+</section>
+
+<hr>
+
+
+<!-- 6. My Role -->
+<section class="section fade-in">
+  <h2 class="section-heading">My Role</h2>
+  <ul>
+    <li>Built the R workflow for data cleaning, excess-death calculation, and visualization.</li>
+    <li>Coordinated expert review and turned statistical uncertainty into clear language for editors
+      and readers.</li>
+    <li>Worked with medical reporters who were covering rural hospitals to check that the data matched
+      what doctors were seeing on the ground.</li>
+  </ul>
+  <p class="role-note">
+    <em>An example of translating statistical uncertainty into newsroom-ready findings.</em>
+  </p>
+</section>
+
+<hr>
+
+<!-- 7. Impact -->
+<section class="section fade-in">
+  <h2 class="section-heading">Impact & Publication</h2>
+  <ul>
+    <li>A front-page investigation in <em>The Asahi Shimbun</em> that revealed excess deaths beyond confirmed counts
+      and helped shift debate toward rural vulnerability.</li>
+    <li>Maps and heatmaps formed the core of the published story and led to an invitation to present the
+      methods at a national R user group.</li>
+  </ul>
+</section>
+
+<hr>
+
+<!-- 8. Links -->
+    <section class="section links-section fade-in">
+      <h2 class="section-heading">Links</h2>
+
+      <ul>
+        <li>
+          <strong>"Japan recorded 135,000 excess deaths in three years"</strong><br>
+          <a href="https://digital.asahi.com/articles/ASR5577C0R4MUTFL015.html" target="_blank" rel="noopener noreferrer">Japanese article</a><br>
+          <em>The Asahi Shimbun, Page 1, May 2023</em>
+        </li>
+        <li>
+          <strong>"Rural Japan suffered the highest excess deaths"</strong><br>
+          <a href="https://digital.asahi.com/articles/ASR5577GCR4PUTFL00C.html" target="_blank" rel="noopener noreferrer">Japanese article</a><br>
+          <em>The Asahi Shimbun, Page 2, May 2023</em>
+        </li>
+        <li>
+          <a href="https://ryomakom.github.io/exdeaths/" target="_blank" rel="noopener noreferrer">Full analysis &amp; code (R)</a>
+        </li>
+      </ul>
+    </section>
+<hr>
+
+<!-- 9. More -->
+    <section class="section more-projects fade-in">
+      <h2 class="section-heading">More projects</h2>
+      <div class="project-grid">
+        <a class="project-card" href="../online_sentiment/">
+          <div class="project-card-title">Populist Wave</div>
+          <div class="project-card-tagline">How Japan's First Major Anti-Establishment Party Found Its Voters</div>
+        </a>
+        <a class="project-card" href="../heat_stroke/">
+          <div class="project-card-title">Heatstroke Gap</div>
+          <div class="project-card-tagline">Cool Regions Faced Higher Risk Than Warm Ones</div>
+        </a>
+        <a class="project-card" href="../uc_inoue/">
+          <div class="project-card-title">Sect Influence</div>
+          <div class="project-card-tagline">A Religious Group With Measurable Electoral Power</div>
+        </a>
+      </div>
+    </section>
+
+</article>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 監視機能（Intersection Observer）を作成
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        // 画面に入ったら
+        if (entry.isIntersecting) {
+          // visibleクラスを追加して表示させる
+          entry.target.classList.add('visible');
+          // 一度表示したら監視をやめる（負荷軽減）
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    // すべての fade-in 要素を監視対象に登録
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
+
+</body>
+</html>

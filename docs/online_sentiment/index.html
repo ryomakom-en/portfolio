@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Populist Wave: How Japan's First Major Anti-Establishment Party Found Its Voters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
+
+  <meta name="description" content="A multi-wave survey reveals how the same voters shifted party support over time, reshaping Japan’s party system.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How Japan's First Major Anti-Establishment Party Found Its Voter">
+  <meta property="og:description" content="A multi-wave survey reveals how the same voters shifted party support over time, reshaping Japan’s party system.">
+  <meta property="og:image" content="https://ryomakom-en.github.io/portfolio/online_sentiment/Shift_in_Preferred_Political_Parties.jpg">
+  <meta property="og:url" content="https://ryomakom-en.github.io/portfolio/online_sentiment/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Japan's First Major Anti-Establishment Party Found Its Voter">
+  <meta name="twitter:description" content="A multi-wave survey reveals how the same voters shifted party support over time, reshaping Japan’s party system.">
+  <meta name="twitter:image" content="https://ryomakom-en.github.io/portfolio/online_sentiment/Shift_in_Preferred_Political_Parties.jpg">
+
+</head>
+<body>
+
+<a href="https://ryomakom-en.github.io/about_me/" class="back-home" aria-label="Back to home">
+  <span class="back-home__icon">🏠</span>
+  <span class="back-home__label">Home</span>
+</a>
+
+<div class="page-shell">
+  <article class="case-card">
+
+    <h1>Populist Wave: How Japan's First Major Anti-Establishment Party Found Its Voters</h1>
+    <div class="subtitle"><em>with Prof. Asako Miura (The University of Osaka)</em></div>
+
+    <p>
+      Supporters of a centrist party moved to a new right-leaning populist party—a shift that reshaped
+      Japan’s party system—based on a 10-wave political-attitude survey of 5,200 people
+      (19,000 responses).
+    </p>
+
+    <hr>
+
+    <!-- 2. What we found -->
+    <section class="section fade-in">
+      <h2 class="section-heading">What We Found</h2>
+      <p>
+        As the July 2025 Upper House election approached, many supporters of the Democratic Party for
+        the People (DPP), a centrist party, moved to Sanseito, a new right-leaning party running
+        against the political establishment.
+      </p>
+
+      <p>
+        On the surface, these voters looked pretty “mainstream”—they came from a centrist party,
+        not the fringes. But their attitudes set them apart: low trust in institutions, heavy reliance
+        on YouTube and social media, and openness to conspiratorial claims.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- 3. Why it matters -->
+    <section class="section fade-in">
+      <h2 class="section-heading">Why It Matters</h2>
+      <p>
+        The data suggest that the DPP had quietly acted as a buffer for voters unhappy with existing parties.
+        When the DPP mishandled its candidate selection for the 2025 race, that buffer broke down. The result
+        was a sudden, measurable flow of voters to Sanseito, which went on to win 14 seats and gain enough
+        strength to influence the governing coalition.
+      </p>
+      <p>
+        Similar stories—where centrist parties lose frustrated supporters to newly organized populist
+        forces—have been seen in Europe and the United States. This project offers one of the first real-time,
+        individual-level views of that dynamic in Japan.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- 4. Visual highlight -->
+    <section class="section fade-in">
+      <h2 class="section-heading">Visual Highlight</h2>
+      <p>
+        <em><strong>
+          The Sankey diagram below turns voter flows into a concrete picture—showing how the same people
+          switched parties over time, which snapshot polls can’t capture.
+        </strong></em>
+      </p>
+      <p>The chart highlights the 1,200 respondents who answered all three key waves.</p>
+
+      <div class="flourish-block">
+        <div class="flourish-container">
+          <div class="flourish-embed flourish-sankey" data-src="visualisation/26461755">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript>
+              <img src="https://ryomakom-en.github.io/portfolio/online_sentiment/Shift_in_Preferred_Political_Parties.jpg"
+                   alt="Voter flow between parties over three survey waves"
+                   style="width: 100%; height: auto;">
+            </noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- 5. How we did it -->
+    <section class="section fade-in">
+      <h2 class="section-heading">How We Did It</h2>
+      <h3>High-frequency panel design</h3>
+      <p>
+        Working with Prof. Asako Miura, a social psychologist and professor at the University of Osaka
+        with expertise in political psychology, we ran 10 online survey waves from early spring through
+        election day. The questionnaire design relied heavily on her lab’s expertise. Respondents were
+        drawn from an online panel and re-contacted each wave, creating a panel-like dataset that let us
+        follow the same individuals over time.
+      </p>
+
+      <h3>Measuring attitude profiles</h3>
+      <p>
+        Each wave asked not only about party support and vote intention, but also media habits, trust
+        in institutions, views on COVID-19 measures and vaccines, and openness to anti-elite messages.
+        These variables were then used to compare the underlying profiles of DPP, Sanseito, and other
+        party supporters.
+      </p>
+
+      <h3>Analysis and visualization</h3>
+      <p>
+        Using R, I reshaped the data into a person-by-wave format and counted how many people moved
+        from one party to another at key moments. These counts were turned into a Sankey diagram to
+        highlight flows out of the DPP toward Sanseito.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- 6. My role -->
+    <section class="section fade-in">
+      <h2 class="section-heading">My Role</h2>
+      <ul>
+        <li>Built the full R pipeline for data cleaning, managing the panel, analysis, and visualization.</li>
+        <li>Developed the Sankey diagram and other charts used in newsroom discussions and in the final series.</li>
+        <li>Worked with politics reporters to turn the statistical patterns into narratives that readers could follow easily.</li>
+        <li>Documented the workflow so that colleagues could review and reuse the methods in later elections.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- 7. Impact & publication -->
+    <section class="section fade-in">
+      <h2 class="section-heading">Impact &amp; Publication</h2>
+      <ul>
+        <li>
+          Findings ran as a 9-part series in <em>The Asahi Shimbun</em>,
+          explaining who Sanseito’s voters were and how they emerged.
+        </li>
+        <li>
+          The analysis informed election-night coverage and post-election explainers on shifts in Japan’s party
+          system.
+        </li>
+        <li>
+          The project helped establish a template for running similar panel surveys in later elections. </li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- 8. Links -->
+
+<section class="section links-section fade-in">
+<h2 class="section-heading">Links</h2>
+
+<h3>Article Series (“ネット意識と選挙” / <em>Online Sentiment and Elections</em>)</h3>
+<p>Key articles from <a href="https://www.asahi.com/rensai/list.html?id=920" target="_blank" rel="noopener noreferrer">9-part series on <em>The Asahi Shimbun</em></a></p>
+
+<ul>
+  <li><a href="https://digital.asahi.com/articles/AST7M4HRFT7MULLI001M.html" target="_blank" rel="noopener noreferrer">Mass voter shift from the DPP to Sanseito</a></li>
+  <li><a href="https://digital.asahi.com/articles/AST6Z3DV0T6ZULLI008M.html" target="_blank" rel="noopener noreferrer">Political fandom and social-media dependence</a></li>
+  <li><a href="https://digital.asahi.com/articles/AST791F8TT79ULLI009M.html" target="_blank" rel="noopener noreferrer">Institutional distrust among new-party supporters</a></li>
+</ul>
+
+<h3>Open Data</h3>
+<p><a href="https://sites.google.com/view/the-uosaka-asahi-survey/" target="_blank">Survey dataset by Prof. Miura &amp; The Asahi</a></p>
+<p><a href="https://ryomakom.github.io/asahi_uosaka/" target="_blank" rel="noopener noreferrer">Full analysis &amp; code (R)</a></p>
+</section>
+
+
+    <hr>
+
+    <!-- 9. More projects -->
+<section class="section more-projects fade-in">
+<h2 class="section-heading">More projects</h2>
+<div class="project-grid">
+  <a class="project-card" href="../excess_mortality/">
+    <div class="project-card-title">COVID Toll</div>
+    <div class="project-card-tagline">Excess Deaths Japan Didn’t Count</div>
+  </a>
+  <a class="project-card" href="../heat_stroke/">
+    <div class="project-card-title">Heatstroke Gap</div>
+    <div class="project-card-tagline">Cool Regions Faced Higher Risk Than Warm Ones</div>
+  </a>
+  <a class="project-card" href="../uc_inoue/">
+    <div class="project-card-title">Sect Influence</div>
+    <div class="project-card-tagline">A Religious Group With Measurable Electoral Power</div>
+  </a>
+</div>
+</section>
+
+  </article>
+</div>
+
+<script>
+  // スクロールで .fade-in 要素をふわっと表示
+  document.addEventListener("DOMContentLoaded", function () {
+    var fadeEls = document.querySelectorAll(".fade-in");
+    if (!("IntersectionObserver" in window)) {
+      fadeEls.forEach(function (el) {
+        el.classList.add("visible");
+      });
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    fadeEls.forEach(function (el) {
+      observer.observe(el);
+    });
+  });
+</script>
+
+
+
+</body>
+</html>

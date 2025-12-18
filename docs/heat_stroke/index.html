@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heatstroke Gap: Cool Regions Faced Higher Risk Than Warm Ones</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
+
+  <meta name="description" content="Cooler regions show nearly double the heatstroke incidence at the same temperature.">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Cool Regions Faced Higher Risk Than Warm Ones">
+  <meta property="og:description" content="Cooler regions show nearly double the heatstroke incidence at the same temperature.">
+  <meta property="og:image" content="https://ryomakom-en.github.io/portfolio/heat_stroke/hs_risk_chart.png">
+  <meta property="og:url" content="https://ryomakom-en.github.io/portfolio/heat_stroke/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cool Regions Faced Higher Risk Than Warm Ones">
+  <meta name="twitter:description" content="Cooler regions show nearly double the heatstroke incidence at the same temperature.">
+  <meta name="twitter:image" content="https://ryomakom-en.github.io/portfolio/heat_stroke/hs_risk_chart.png">
+
+</head>
+<body>
+
+<a href="https://ryomakom-en.github.io/about_me/" class="back-home" aria-label="Back to home">
+  <span class="back-home__icon">🏠</span>
+  <span class="back-home__label">Home</span>
+</a>
+
+<div class="page-shell">
+<article class="case-card">
+
+<h1>Heatstroke Gap: Cool Regions Faced Higher Risk Than Warm Ones</h1>
+  <p>
+    Heatstroke risk in Japan’s coolest northern regions is about twice that of warmer areas,
+    even under the same summer heat, based on an analysis of 790,000 emergency cases
+    from 2008–2022.
+  </p>
+
+<hr>
+
+<!-- 2. What we found -->
+<section class="section fade-in">
+  <h2 class="section-heading">What We Found</h2>
+  <p>
+    Heatstroke risk in cool regions is about twice that in warm ones. On days when the high reached
+    35°C, cooler areas saw roughly 2 emergency transports per 100,000 people, compared with about
+    1 in warmer regions.
+  </p>
+</section>
+
+<hr>
+
+<!-- 3. Why it matters -->
+<section class="section fade-in">
+  <h2 class="section-heading">Why It Matters</h2>
+  <p>
+    Japan uses a single nationwide threshold for heat alerts, but risk is not the same everywhere.
+    People who live in cooler climates are less used to extreme heat and often have homes and communities
+    that are less prepared for it—so a sudden spike can hit harder.
+  </p>
+  <p>
+    The findings suggest heat alerts should be more local—a challenge not just in Japan, but also
+    in northern Europe, Canada, and northern U.S. states, where historically cool regions now see record heat.
+  </p>
+</section>
+
+<hr>
+
+<!-- 4. Visual highlight -->
+<section class="section fade-in">
+  <h2 class="section-heading">Visual Highlight</h2>
+  <p><em><strong>Cool zones (&lt;22°C summer average) show nearly double the heatstroke incidence at the same daily temperature.</strong></em></p>
+
+  <iframe
+    src="hs_risk_chart.html"
+    title="Interactive chart: heatstroke incidence by daily temperature and region"
+    width="100%"
+    height="500"
+    style="border:none;"
+    loading="lazy">
+  </iframe>
+
+  <noscript>
+    <p>
+      <img src="hs_risk_chart.png"
+           alt="Heatstroke risk by temperature and region"
+           style="max-width:100%; height:auto;">
+    </p>
+  </noscript>
+
+  <div style="text-align:right; font-size:0.8em; color:#777; margin-top:4px;">
+    * To keep the chart responsive, only about 10% of points are shown. The smooth curves are based on the full dataset.
+  </div>
+</section>
+
+
+<hr>
+
+<!-- 5. How we did it -->
+<section class="section fade-in">
+  <h2 class="section-heading">How We Did It</h2>
+
+  <h3>Dataset &amp; Approach</h3>
+  <ul>
+    <li>Emergency transport records for 790,000 heatstroke cases (2008–2022).</li>
+    <li>Daily temperature and humidity from each prefectural capital.</li>
+    <li>Population data and a simple three-way climate grouping based on average summer temperature.</li>
+    <li>Tested several climate and demographic variables; summer average temperature explained regional
+      differences best.</li>
+  </ul>
+
+  <h3>Validation</h3>
+  <p>
+    The choice of variables and the framing of the findings were reviewed with a climate reporter, and
+    a university epidemiologist checked that the patterns matched what is known about how the human body
+    adapts to heat.
+  </p>
+</section>
+
+<hr>
+
+<!-- 6. My role -->
+<section class="section fade-in">
+  <h2 class="section-heading">My Role</h2>
+  <ul>
+    <li>Developed the R pipeline for data cleaning, analysis, and visualization.</li>
+    <li>Led variable testing and identified summer average temperature as the clearest, most intuitive predictor.</li>
+    <li>Worked with a climate reporter to shape the narrative and connect the data to lived experience on
+      the ground.</li>
+    <li>Organized expert review with a university epidemiologist.</li>
+  </ul>
+</section>
+
+<hr>
+
+<!-- 7. Impact -->
+<section class="section fade-in">
+  <h2 class="section-heading">Impact &amp; Publication</h2>
+  <ul>
+    <li>A front-page investigation in <em>The Asahi Shimbun</em> that spotlighted northern risk and
+      helped push discussion on region-specific heat alerts.</li>
+  </ul>
+</section>
+
+<hr>
+
+<!-- 8. Links -->
+    <section class="section links-section fade-in">
+      <h2 class="section-heading">Links</h2>
+
+      <ul>
+        <li>
+          <strong>"The cooler the region, the greater the risk of heatstroke"</strong><br>
+          <a href="https://digital.asahi.com/articles/ASR6V5TRJR6FULBH00D.html" target="_blank" rel="noopener noreferrer">Japanese article</a><br>
+          <em>The Asahi Shimbun, Page 1, June 2023</em>
+        </li>
+        <li>
+          <a href="https://ryomakom.github.io/heat_stroke/" target="_blank" rel="noopener noreferrer">Full analysis &amp; code (R)</a>
+        </li>
+      </ul>
+    </section>
+<hr>
+
+<!-- 9. More -->
+    <section class="section more-projects fade-in">
+      <h2 class="section-heading">More projects</h2>
+      <div class="project-grid">
+        <a class="project-card" href="../online_sentiment/">
+          <div class="project-card-title">Populist Wave</div>
+          <div class="project-card-tagline">How Japan's First Major Anti-Establishment Party Found Its Voters</div>
+        </a>
+        <a class="project-card" href="../excess_mortality/">
+          <div class="project-card-title">COVID Toll</div>
+          <div class="project-card-tagline">Excess Deaths Japan Didn’t Count</div>
+        </a>
+        <a class="project-card" href="../uc_inoue/">
+          <div class="project-card-title">Sect Influence</div>
+          <div class="project-card-tagline">A Religious Group With Measurable Electoral Power</div>
+        </a>
+      </div>
+    </section>
+
+</article>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 監視機能（Intersection Observer）を作成
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        // 画面に入ったら
+        if (entry.isIntersecting) {
+          // visibleクラスを追加して表示させる
+          entry.target.classList.add('visible');
+          // 一度表示したら監視をやめる（負荷軽減）
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    // すべての fade-in 要素を監視対象に登録
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
+</body>
+</html>

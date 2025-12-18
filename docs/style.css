@@ -1,0 +1,370 @@
+/* ===== Global Layout ===== */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #f3f4f6 0%, #ffffff 40%);
+  color: #111827;
+  line-height: 1.7;
+  margin: 0;
+  padding: 40px 16px 60px;
+}
+
+.page-shell {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/* Main container card */
+.case-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+  padding: 32px 24px 40px;
+}
+
+@media (min-width: 768px) {
+  .case-card {
+    padding: 40px 40px 46px;
+  }
+}
+
+/* Accent bar on top */
+.case-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  border-radius: 18px 18px 0 0;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+}
+
+/* ===== Typography ===== */
+h1 {
+  font-size: clamp(26px, 3vw, 30px);
+  margin: 10px 0 6px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 22px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 26px 0;
+}
+
+.section {
+  margin: 30px 0;
+}
+
+.section-heading {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-heading::before {
+  content: "";
+  width: 20px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+}
+
+h3 {
+  margin: 18px 0 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 14px;
+  font-size: 15.5px;
+  color: #111827;
+}
+
+ul {
+  padding-left: 1.1rem;
+  margin: 6px 0 18px;
+}
+
+li {
+  margin-bottom: 6px;
+  font-size: 15.5px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* ===== Flourish / Image blocks ===== */
+.flourish-block {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #2563eb;
+  border-radius: 10px;
+  padding: 14px 16px 18px;
+  margin: 18px 0;
+}
+
+.flourish-note {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+/* 中身をカード幅いっぱいにする */
+.flourish-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* 画像を入れる場合 */
+.flourish-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* ---- Image size control ---- */
+.case-card img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 16px auto;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* ---- Table styling (grid layout) ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 15px;
+}
+
+table th,
+table td {
+  border: 1px solid #d1d5db;   /* ← 格子の色 */
+  padding: 8px 10px;
+  text-align: left;
+}
+
+table th {
+  background: #f3f4f6;          /* ヘッダーを薄グレーで強調 */
+  font-weight: 600;
+}
+
+/* ============================
+   Responsive Flourish Embeds
+   ============================ */
+.flourish-container,
+.flourish-embed {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Flourish埋め込み専用。ほかのiframeには影響させない */
+.flourish-embed iframe,
+.flourish-embed object {
+  width: 100% !important;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;   /* 画面比率を維持しつつ縮む */
+  height: auto;
+  border: none;
+}
+
+/* スマホではグラフを「ほぼ全幅」に広げる */
+@media (max-width: 600px) {
+  /* 必要ならカードの左右パディングをそのままに */
+  .case-card {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  /* Flourishブロックだけパディングを食い破ってフルブリード風に */
+  .case-card .flourish-block {
+    margin-left: -24px;
+    margin-right: -24px;
+    border-radius: 0;
+    border-left-width: 0;   /* 左の青いバーを消したい場合 */
+    border-right-width: 0;
+  }
+
+  .case-card .flourish-block .flourish-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.role-note {
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+  color: #6b7280;
+}
+
+/* ===== Links ===== */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(37, 99, 235, 0.35);
+  padding-bottom: 1px;
+}
+
+a:hover {
+  border-bottom-color: rgba(37, 99, 235, 0.8);
+}
+
+.back-home {
+  display: inline-block;
+  margin: 16px 0 24px;
+  padding: 8px 14px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.back-home:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* ===== Homeボタン（アイコン付き・左上固定） ===== */
+.back-home {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #111827;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.back-home__icon {
+  font-size: 1.1rem;
+}
+
+.back-home__label {
+  font-weight: 500;
+}
+
+/* モバイルでは少し小さく＆内側に */
+@media (max-width: 640px) {
+  .back-home {
+    top: 10px;
+    left: 10px;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+  }
+}
+
+/* ===== スクロール時のフェードイン ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== More projects グリッド ===== */
+.more-projects {
+  margin-top: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+
+.project-card {
+  display: block;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.project-card-title {
+  font-weight: 600;
+  font-size: 0.98rem;
+  margin-bottom: 4px;
+}
+
+.project-card-tagline {
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+/* ホバー時のカード効果（PC） */
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12);
+    border-color: #d1d5db;
+  }
+}
+
+/* 幅が広いときは2〜3列表示 */
+@media (min-width: 720px) {
+  .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Visual Highlight map: fill the white card on mobile (no overflow) */
+@media (max-width: 600px) {
+  /* カードの内側padding(24px)だけ打ち消して、白い領域の中に収める */
+  .case-card figure.full-bleed {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+
+  /* 既存の .case-card img { margin:16px auto; } を上書き */
+  .case-card figure.full-bleed img {
+    width: 100%;
+    max-width: 100%;
+    margin: 16px 0;     /* 左右autoを消す */
+    border-radius: 0;  /* 端まで行くなら角丸なしが自然（好みで） */
+  }
+
+  /* キャプションはカード内側の余白に戻す（任意） */
+  .case-card figure.full-bleed figcaption {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
